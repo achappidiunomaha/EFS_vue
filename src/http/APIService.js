@@ -140,45 +140,6 @@
     const headers = {Authorization: `jwt ${jwtToken}`};
     return axios.delete(url, {headers: headers});
  }
-
- getMutualFund(param_pk) {
-  const url = `${API_URL}/api/mutualfunds/${param_pk}`;
-  let jwtToken = localStorage.getItem('token');
-  console.log(":::jwtToken:::::"+jwtToken);
-  const headers = {Authorization: `jwt ${jwtToken}`};
-  return axios.get(url, {headers: {Authorization: `jwt ${jwtToken}`}});
-}
-
-
-getMutualFundList() {
-    const url = `${API_URL}/api/mutualfunds`;
-    let jwtToken = localStorage.getItem('token');
-    console.log(":::jwtToken:::::" + jwtToken);
-    const headers = {Authorization: `jwt ${jwtToken}`};
-    return axios.get(url, {headers: headers});
-
-}
-
-addNewMutualFund(mutualfund){
-const url = `${API_URL}/api/mutualfunds/`;
-let jwtToken = localStorage.getItem('token');
-const headers = {Authorization: `jwt ${jwtToken}`};
-return axios.post(url, mutualfund, {headers: headers});
-}
-
-updateMutualFund(mutualfund){
- const url = `${API_URL}/api/mutualfunds/${mutualfund.pk}`;
- let jwtToken = localStorage.getItem('token');
- const headers = {Authorization: `jwt ${jwtToken}`};
- return axios.put(url, mutualfund, {headers: headers});
-}
-
-deleteMutualFunds(mutualfund_Pk){
-  const url = `${API_URL}/api/mutualfunds/${mutualfund_Pk}`;
-  let jwtToken = localStorage.getItem('token');
-  const headers = {Authorization: `jwt ${jwtToken}`};
-  return axios.delete(url, {headers: headers});
-}
   
 }
   

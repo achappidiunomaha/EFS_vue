@@ -8,9 +8,6 @@ import InvestmentList from '@/components/InvestmentList'
 import InvestmentCreate from '@/components/InvestmentCreate'
 import StockList from '@/components/StockList'
 import StockCreate from '@/components/StockCreate'
-import MutualFundList from '@/components/MutualFundList'
-import MutualFundCreate from '@/components/MutualFundCreate'
-
 
 
 const routes = [
@@ -82,26 +79,6 @@ const routes = [
     component: StockCreate
   },
 
-  {
-    path: '/mutualfund-list',
-    name: 'MutualFundList',
-    component: MutualFundList
-  },
-  {
-    path: '/mutualfund-list/:msg',
-    name: 'MutualFundUpdatedList',
-    component: MutualFundList
-  },
-  {
-    path: '/mutualfund-create',
-    name: 'MutualFundCreate',
-    component: MutualFundCreate
-  },
-  {
-    path: '/mutualfund-create/:pk',
-    name: 'MutualFundUpdate',
-    component: MutualFundCreate
-  },
 
   {
     path: '/auth',
