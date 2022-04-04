@@ -170,40 +170,7 @@
 
                 </div>
 
-                <div class="card">
-
-
-
-                  <img :src="require('@/assets/mutual_funds.jpg')" class="card-img-top" style="height: 15rem">
-
-
-
-                  <div class="card-body">
-
-
-
-                    <h5 class="card-title">Mutual Funds</h5>
-
-
-
-                    <a @click="viewMutualFunds" class="btn btn-primary">View Details</a>
-
-
-
-                  </div>
-
-
-
-                </div>
-
-
-
-
-              </div>
-
-
-
-            </div>
+                
 
 
 
